@@ -51,6 +51,12 @@ app.get('/', (req, res) => {
   //RENDERS home.hbs PASSES PROPERTY VARIABLE(object) TO HANDLEBARS AND CAN BE CALLED USING IMAGES TAG
 
 });
+app.get('/test', (req, res) => {
+  res.render('test', {
+    data: "hiii"
+  });
+})
+
 
 //Server info
 app.listen(3000, () => {
