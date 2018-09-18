@@ -25,6 +25,11 @@ app.set('view engine', '.hbs');
 
 //HOME ROUTE
 app.get('/', (req, res) => {
+  res.render('home', {});
+});
+
+
+app.get('/listing', (req, res) => {
   // API HEAD INFO WITH KEY AND SUCH
   var options = {
     method: 'GET',
@@ -40,22 +45,23 @@ app.get('/', (req, res) => {
     if (error) throw new Error(error);
 
     let data = JSON.parse(body);
-    let property = data.value;
-    console.log(property)
+    let propertyData = data.value;
+    // console.log(propertyData);
 
     // RENDER THE HOME TEMPLATE AND PASS THE GIF DATA IN TO THE TEMPLATE
-    res.render('home', {
-      images: property
+    res.render('listing', {
+      property: propertyData
     });
   });
   //RENDERS home.hbs PASSES PROPERTY VARIABLE(object) TO HANDLEBARS AND CAN BE CALLED USING IMAGES TAG
 
 });
+
 app.get('/test', (req, res) => {
   res.render('test', {
     data: "hiii"
   });
-})
+});
 
 
 //Server info
