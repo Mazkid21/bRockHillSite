@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const express = require('express');
 const request = require('request');
+const path = require('path');
 const app = express();
 
 //EXPRESS (app) USE THIS MIDDLEWARE...PUT BEFORE ROUTES TO SO IT PROCESS FIRST
@@ -22,6 +23,8 @@ app.engine(
   })
 );
 app.set('view engine', '.hbs');
+
+app.use(express.static(path.join(__dirname, '/public')));
 
 //HOME ROUTE
 app.get('/', (req, res) => {

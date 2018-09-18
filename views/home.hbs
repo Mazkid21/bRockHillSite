@@ -1,10 +1,642 @@
-<h1>Search for gifs</h1>
-<form action="/">
-    <input type="text" name="term">
-    <button type="submit">Search</button>
-</form>
+<!-- home
+    ================================================== -->
+<section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/Gondi.jpg"
+    data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
-{{#each images}}
+    <div class="overlay"></div>
+    <div class="shadow-overlay"></div>
 
-<p>{{@index}}. {{this.Directions}}</p>
-{{/each}}
+    <div class="home-content">
+
+        <div class="row home-content__main">
+
+            <h3>Brittanie Rockhill</h3>
+
+            <h1>
+                Broker Associate <br>
+                Luxary Sales <br>
+                and Rentals.
+            </h1>
+
+            <div class="home-content__buttons">
+                <a href="listings.html" class=" btn btn--stroke">
+                    find a home
+                </a>
+                <a href="#about" class="smoothscroll btn btn--stroke">
+                    More About Us
+                </a>
+            </div>
+
+        </div>
+
+        <div class="home-content__scroll">
+            <a href="#about" class="scroll-link smoothscroll">
+                <span>Scroll Down</span>
+            </a>
+        </div>
+
+        <div class="home-content__line"></div>
+
+    </div> <!-- end home-content -->
+
+
+    <ul class="home-social">
+        <li>
+            <a href="https://www.facebook.com/casasaspen" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+        </li>
+        <li>
+            <a href="https://twitter.com/casasaspen" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+        </li>
+        <li>
+            <a href="https://www.google.com/maps/place/Brittanie+Rockhill/@39.1901897,-106.8207657,15z/data=!4m5!3m4!1s0x0:0xb66960ce6a96aada!8m2!3d39.1871309!4d-106.8179828"
+                target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i><span>Google</span></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/brittanie-rockhill-50a35047/" target="_blank"><i class="fa fa-linkedin"
+                    aria-hidden="true"></i><span>Linkedin</span></a>
+        </li>
+    </ul>
+    <!-- end home-social -->
+
+</section> <!-- end s-home -->
+
+
+<!-- about
+    ================================================== -->
+<section id='about' class="s-about">
+
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+        <div class="col-full">
+            <h3 class="subhead subhead--dark">Hello There</h3>
+            <h1 class="display-1 display-1--light">Real Estate Stats here</h1>
+        </div>
+    </div> <!-- end section-header -->
+
+    <div class="row about-desc" data-aos="fade-up">
+        <div class="col-full">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt.
+            </p>
+        </div>
+    </div> <!-- end about-desc -->
+
+    <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+
+        <div class="col-block stats__col ">
+            <div class="stats__count">127</div>
+            <h5>Awards Received</h5>
+        </div>
+        <div class="col-block stats__col">
+            <div class="stats__count">1505</div>
+            <h5>Cups of Coffee</h5>
+        </div>
+        <div class="col-block stats__col">
+            <div class="stats__count">109</div>
+            <h5>Projects Completed</h5>
+        </div>
+        <div class="col-block stats__col">
+            <div class="stats__count">102</div>
+            <h5>Happy Clients</h5>
+        </div>
+
+    </div> <!-- end about-stats -->
+
+    <div class="about__line"></div>
+
+</section> <!-- end s-about -->
+
+
+<!-- services
+    ================================================== -->
+<!-- <section id='services' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">What We Do</h3>
+                <h1 class="display-2">We’ve got everything you need to launch and grow your busines</h1>
+            </div>
+        </div> <!-- end section-header -->
+<!--
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-paint-brush"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Brand Identity</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-group"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Illustration</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-megaphone"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Marketing</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-earth"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Web Design</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-cube"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Packaging Design</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon"><i class="icon-lego-block"></i></div>
+                <div class="service-text">
+                    <h3 class="h2">Web Development</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+        </div> -->
+<!-- end services-list -->
+
+</section> <!-- end s-services -->
+-->
+
+<!-- works
+    ================================================== -->
+<section id='works' class="s-works">
+
+    <div class="intro-wrap">
+
+        <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Recent Works</h3>
+                <h1 class="display-2 display-2--light">We love what we do, check out some of our latest works</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+    </div> <!-- end intro-wrap -->
+
+    <div class="row works-content">
+        <div class="col-full masonry-wrap">
+            <div class="masonry">
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/recentWorks/recent1.jpg" class="thumb-link" title="Shutterbug"
+                                data-size="1050x700">
+                                <img src="images/portfolio/recentWorks/recent1.jpg" srcset="images/portfolio/recentWorks/recent1.jpg 1x, images/portfolio/recentWorks/recent1.jpg 2x"
+                                    alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                House 1
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto
+                                quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/recentWorks/recent2.jpg" class="thumb-link" title="Woodcraft"
+                                data-size="1050x700">
+                                <img src="images/portfolio/recentWorks/recent2.jpg" srcset="images/portfolio/recentWorks/recent2.jpg 1x, images/portfolio/recentWorks/recent2.jpg 2x"
+                                    alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                House 2
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto
+                                quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/recentWorks/recent3.jpg" class="thumb-link" title="The Beetle Car"
+                                data-size="1050x700">
+                                <img src="images/portfolio/recentWorks/recent3.jpg" srcset="images/portfolio/recentWorks/recent3.jpg 1x, images/portfolio/recentWorks/recent3.jpg 2x"
+                                    alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                House 3
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto
+                                quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/recentWorks/recent4.jpg" class="thumb-link" title="Grow Green"
+                                data-size="1050x700">
+                                <img src="images/portfolio/recentWorks/recent4.jpg" srcset="images/portfolio/recentWorks/recent4.jpg 1x, images/portfolio/recentWorks/recent4.jpg 2x"
+                                    alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                House 4
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto
+                                quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/recentWorks/recent5.jpg" class="thumb-link" title="Guitarist"
+                                data-size="1050x700">
+                                <img src="images/portfolio/recentWorks/recent5.jpg" srcset="images/portfolio/recentWorks/recent5.jpg 1x, images/portfolio/recentWorks/recent5.jpg 2x"
+                                    alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                House 5
+                            </h3>
+                            <p class="item-folio__cat">
+                                Brading
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto
+                                quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/recentWorks/recent6.jpg" class="thumb-link" title="Palmeira"
+                                data-size="1050x700">
+                                <img src="images/portfolio/recentWorks/recent6.jpg" srcset="images/portfolio/recentWorks/recent6.jpg 1x, images/portfolio/recentWorks/recent6.jpg 2x"
+                                    alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                House 6
+                            </h3>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto
+                                quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+            </div> <!-- end masonry -->
+        </div> <!-- end col-full -->
+    </div> <!-- end works-content -->
+
+</section> <!-- end s-works -->
+
+
+<!-- clients
+    ================================================== -->
+<section id="clients" class="s-clients">
+
+    <div class="row section-header" data-aos="fade-up">
+        <div class="col-full">
+            <h3 class="subhead">Our Clients</h3>
+            <!-- <h1 class="display-2">Glint has been honored to
+                partner up with these clients</h1> -->
+        </div>
+    </div> <!-- end section-header -->
+
+    <!--         <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-full">
+                <div class="clients">
+
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/apple.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/atom.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/blackberry.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/dropbox.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/envato.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/firefox.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/joomla.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/magento.png" /></a>
+
+                </div> -->
+    <!-- end clients -->
+    </div> <!-- end col-full -->
+    </div> <!-- end clients-outer -->
+
+    <div class="row clients-testimonials" data-aos="fade-up">
+        <div class="col-full">
+            <div class="testimonials">
+
+                <div class="testimonials__slide">
+
+                    <p>My husband and I loved working with Brittanie Rockhill! Not only did she spend endless hours
+                        researching properties that would fit our criteria, she was extremely easy to get along
+                        with and talk to about our real estate needs. Brittanie was also very knowledgeable about
+                        the current market trends, which was particularly helpful to us in our decision process.
+                        The process of buying a house can be very stressful; however, Brittanie made us feel very
+                        confident with her as our real estate broker. She was very professional, dedicated, and
+                        truly listened to our needs. Brittanie also had a pretty flexible schedule which included
+                        some evening and weekend showings for us. Her responsiveness and attention to detail made
+                        her a valuable asset to us while we were looking for a property to purchase. She also did a
+                        great job at the negotiating table for us. Brittanie was able to meet all of our
+                        expectations and we came away from the negotiating table happy. If you want a real estate
+                        broker that is devoted to her clients, professional, and a great person, then I highly
+                        recommend that you use Brittanie Rockhill! </p>
+
+                    <!-- <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar"> -->
+                    <div class="testimonials__info">
+                        <span class="testimonials__name">user847221</span>
+                        <!-- <span class="testimonials__pos">CEO, Apple</span> -->
+                    </div>
+
+                </div>
+
+                <div class="testimonials__slide">
+
+                    <p>Brittanie was helpful, knowledgeable and great to work with.
+                        She was always prompt to respond and to act on our behalf. She would always have an
+                        accurate answer to our questions and take the time explain the details.
+                        Our particular closing went smooth and quickly. Brittanie had a lot to do with that by
+                        making sure everything was in order and moving in the right direction….we were always well
+                        informed. I would definitely work with her again and highly recommend her.</p>
+
+                    <!--                         <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
+ -->
+                    <div class="testimonials__info">
+                        <span class="testimonials__name">Matt Yosten</span>
+                        <!--                             <span class="testimonials__pos">CEO, Google</span>
+ -->
+                    </div>
+
+                </div>
+
+                <!-- <div class="testimonials__slide">
+
+                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+
+                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Satya Nadella</span>
+                            <span class="testimonials__pos">CEO, Microsoft</span>
+                        </div>
+
+                    </div> -->
+
+            </div><!-- end testimonials -->
+
+        </div> <!-- end col-full -->
+    </div> <!-- end client-testimonials -->
+
+</section> <!-- end s-clients -->
+
+
+<!-- contact
+    ================================================== -->
+<section id="contact" class="s-contact">
+
+    <div class="overlay"></div>
+    <div class="contact__line"></div>
+
+    <div class="row section-header" data-aos="fade-up">
+        <div class="col-full">
+            <h3 class="subhead">Contact Us</h3>
+            <h1 class="display-2 display-2--light">Reach out for a new project or just say hello</h1>
+        </div>
+    </div>
+
+    <div class="row contact-content" data-aos="fade-up">
+
+        <div class="contact-primary">
+
+            <h3 class="h6">Send Us A Message</h3>
+
+            <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                <fieldset>
+
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value=""
+                            minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value=""
+                            required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value=""
+                            class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50"
+                            required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+            <!-- contact-warning -->
+            <div class="message-warning">
+                Something went wrong. Please try again.
+            </div>
+
+            <!-- contact-success -->
+            <div class="message-success">
+                Your message was sent, thank you!<br>
+            </div>
+
+        </div> <!-- end contact-primary -->
+
+        <div class="contact-secondary">
+            <div class="contact-info">
+
+                <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+                <div class="cinfo">
+                    <h5>Where to Find Us</h5>
+                    <p>
+                        520 E Durant Ave<br>
+                        Aspen, CO<br>
+                        81611
+                    </p>
+                </div>
+
+                <div class="cinfo">
+                    <h5>Email Us At</h5>
+                    <p>
+                        brittanie@brittanierockhill.com
+                    </p>
+                </div>
+
+                <div class="cinfo">
+                    <h5>Call Us At</h5>
+                    <p>
+                        Office: (970) 366 0891<br>
+                        Mobile: (970) 366 0891<br>
+                    </p>
+                </div>
+
+                <ul class="contact-social">
+                    <li>
+                        <a href="https://www.facebook.com/casasaspen" target="_blank"><i class="fa fa-facebook"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/casasaspen" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/Brittanie+Rockhill/@39.1901897,-106.8207657,15z/data=!4m5!3m4!1s0x0:0xb66960ce6a96aada!8m2!3d39.1871309!4d-106.8179828"
+                            target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/brittanie-rockhill-50a35047/" target="_blank"><i class="fa fa-linkedin"
+                                aria-hidden="true"></i></a>
+                    </li>
+                </ul> <!-- end contact-social -->
+
+            </div> <!-- end contact-info -->
+        </div> <!-- end contact-secondary -->
+
+    </div> <!-- end contact-content -->
+
+</section> <!-- end s-contact -->
