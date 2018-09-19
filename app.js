@@ -37,6 +37,12 @@ app.get('/listing', (req, res) => {
   var options = {
     method: 'GET',
     url: 'https://sparkapi.com/Reso/OData/Property',
+    qs: {
+      '$filter': 'City eq \'Aspen\' and MlsStatus eq \'Active\'',
+      '$expand': 'CustomFields,Media',
+      '$orderby': 'ListPrice desc',
+      '$count': 'true'
+    },
     headers: {
       'x-sparkapi-user-agent': 'BrittanieRockhill',
       accept: 'application/json',

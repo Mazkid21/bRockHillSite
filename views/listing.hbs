@@ -32,14 +32,13 @@
                         <div class="item-folio__thumb">
                             <a href="images/portfolio/recentWorks/recent1.jpg" class="thumb-link" title="Shutterbug"
                                 data-size="1050x700">
-                                <img src="images/portfolio/recentWorks/recent1.jpg" srcset="images/portfolio/recentWorks/recent1.jpg 1x, images/portfolio/recentWorks/recent1.jpg 2x"
-                                    alt="">
+                                <img src="{{property.0.Media.0.MediaURL}}" alt="">
                             </a>
                         </div>
 
                         <div class="item-folio__text">
                             <h3 class="item-folio__title">
-                                House 1
+                                {{property.0.UnparsedAddress}}
                             </h3>
                             <p class="item-folio__cat">
                                 {{property.0.Directions}}
@@ -63,14 +62,15 @@
                         <div class="item-folio__thumb">
                             <a href="images/portfolio/recentWorks/recent2.jpg" class="thumb-link" title="Woodcraft"
                                 data-size="1050x700">
-                                <img src="images/portfolio/recentWorks/recent2.jpg" srcset="images/portfolio/recentWorks/recent2.jpg 1x, images/portfolio/recentWorks/recent2.jpg 2x"
+                                <img src="{{property.1.Media.0.MediaURL}}"
+                                    {{!--srcset="images/portfolio/recentWorks/recent2.jpg 1x, images/portfolio/recentWorks/recent2.jpg 2x" --}}
                                     alt="">
                             </a>
                         </div>
 
                         <div class="item-folio__text">
                             <h3 class="item-folio__title">
-                                House 2
+                                {{property.1.UnparsedAddress}}
                             </h3>
                             <p class="item-folio__cat">
                                 {{property.1.Directions}}
